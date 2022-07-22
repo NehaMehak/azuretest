@@ -6,14 +6,14 @@ terraform {
       version = "=2.46.0"
     }
   }
-
+}
   # Note that variable values are not allowed for the backend. The
   # resource group, storage account, and container names must all be
   # hardcoded. Terraform will automatically suffix the key with the
   # current Terraform workspace/environment.
 #  backend "azurerm" {
 #  }
-}
+
 
 provider "azurerm" {
   features {}
